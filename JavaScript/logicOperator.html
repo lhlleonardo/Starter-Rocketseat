@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rocketseat - JS Logic</title>
+</head>
+<body>
+    <script>
+        var alunos = [
+            {nome : 'Leonardo', 
+             idade : 23,
+             sexo : 'M'}, {
+              nome : 'Izabela',
+              idade : 22,
+              sexo : 'F'   
+             }];
+
+        if (alunos[0].sexo === 'M' && alunos[0].idade === 23){
+            console.log('Leonardo is a man and is 23 years old.');
+        } else {
+            console.log('False');
+        }
+
+        if (alunos[1].sexo === 'F' || alunos[1].idade > 25){
+            console.log('One of Two are True!')
+        } else {
+            console.log('False!');
+        }
+
+        if (alunos[1].sexo !== 'M'){
+            console.log('Is not a man!')
+        } else {
+            console.log('Is a man!');
+        }
+
+        option = 'F'
+        var male = (option === 'M');
+        console.log(male);
+    </script>
+</body>
+</html>
